@@ -9,14 +9,9 @@ Console.Write("Введите целове число: ");
 int a = Convert.ToInt32(Console.ReadLine());
 int count = 2;
 
-while (2, count == a);
+while (count <= a)
 {
-if (count % 2 == 0) 
-{
-    Console.WriteLine("Да");
+    Console.WriteLine(count+" ");
+    count = count + 2;    
 }
-else
-{   
-    Console.WriteLine("Нет");
-}
-}
+Console.WriteLine();
