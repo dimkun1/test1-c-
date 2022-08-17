@@ -9,10 +9,8 @@
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-
-int i = 1;
-while (i <= number) 
-{
-    Console.WriteLine($"{number}- {i} -> {i * i * i}");
-    i++;
-}
+if(number > 0)
+    
+    for (int i = 1; i <= number; i++) 
+        Console.WriteLine($"{number}- {i} -> {i * i * i}");
+else Console.WriteLine("Введите число больше 0");
