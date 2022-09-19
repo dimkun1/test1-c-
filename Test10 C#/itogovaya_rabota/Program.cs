@@ -6,10 +6,25 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+void PrintArray(string[] world)
+{
+    Console.Write("[");
+    for (int i = 0; i < world.GetLength(0); i++)
+    {
+
+        
+        if (i < world.GetLength(0) - 1) Console.Write($"{world[i]}, ");
+        else Console.Write($"{world[i]}");
+    }
+
+        Console.WriteLine("]");
+        Console.WriteLine();
+}
+
 
 
 string[] world = { "Tom", "Sam", "Bob", "Tamara", "Vika" };
 
 
-
+PrintArray(world);
 
