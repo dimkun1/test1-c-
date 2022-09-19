@@ -28,3 +28,15 @@ string[] world = { "Tom", "Sam", "Bob", "Tamara", "Vika" };
 
 PrintArray(world);
 
+
+
+string[] copyworld = new string[world.GetLength(0)];
+
+for (int i = 0; i < world.GetLength(0); i++)
+{
+    copyworld[i] = world[i];
+}
+    
+
+PrintArray(copyworld);
+
