@@ -21,8 +21,25 @@ void Arrayltt(string[] array001, string[] array002)
     {
     if(array001[i].Length <= 3)
         {
-        array002[count] = array1[i];
+        array002[count] = array001[i];
         count++;
         }
     }
 }
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+
+Arrayltt(array001, array002);
+
+PrintArray(array001);
+PrintArray(array002);
+
+
