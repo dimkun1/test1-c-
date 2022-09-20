@@ -14,3 +14,15 @@
 string[] array001 = { "Tamara", "Sam", "Bob", "№%:", "Tom", "Vi", "-2", "фыапуйцй" };
 string[] array002 = new string[array001.Length];
 
+void Arrayltt(string[] array001, string[] array002)
+{
+    int count = 0;
+    for (int i = 0; i < array001.Length; i++)
+    {
+    if(array001[i].Length <= 3)
+        {
+        array002[count] = array1[i];
+        count++;
+        }
+    }
+}
